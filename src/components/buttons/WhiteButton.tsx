@@ -3,14 +3,15 @@ import { ReactNode } from "react";
 interface props {
 	children: ReactNode;
 	border?: "black" | "white";
+	hover?: boolean;
 }
 
-const WhiteButton = ({ children, border = "white" }: props) => {
+const WhiteButton = ({ children, border = "white", hover }: props) => {
 	return (
 		<button
-			className={`${
-				border == "black" ? "border-black" : "border-white"
-			} border  px-10 py-4 mt-5 mb-5`}
+			className={`${border == "black" ? "border-black" : "border-white"}
+			${hover && "hover:bg-purple-500"} 
+			border  px-10 py-4 mt-5 mb-5`}
 		>
 			{children}
 		</button>

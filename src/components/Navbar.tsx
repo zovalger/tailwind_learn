@@ -12,8 +12,8 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="">
-			<div className="bg-black text-white p-4 flex fixed w-full top-0">
+		<nav className=" block static md:fixed top-0 md:flex text-white">
+			<div className="bg-black  p-4 flex fixed w-full top-0 md:static  md:bg-transparent">
 				<div>
 					<div className="text-3xl">
 						Davon
@@ -21,7 +21,7 @@ const Navbar = () => {
 					</div>
 					<div>Escuela de Asesoría Empresarial</div>
 				</div>
-				<button className="ml-auto p-2" onClick={openModal}>
+				<button className="ml-auto block p-2 md:hidden" onClick={openModal}>
 					<svg
 						className="h-10 w-10 text-gray-500"
 						fill="none"
@@ -42,11 +42,11 @@ const Navbar = () => {
 			<div
 				className={`${
 					!modalNav ? "hidden" : "block"
-				}  bg-black top-0 bottom-0 left-0 right-0 text-white text-xl fixed`}
+				}  bg-black top-0 bottom-0 left-0 right-0  text-xl fixed md:static md:block md:bg-transparent`}
 			>
 				<div className="flex justify-between p-8">
 					<button>Entrar</button>
-					<button onClick={closeModal}>
+					<button onClick={closeModal} className="block md:hidden">
 						<svg
 							className="h-8 w-8 text-gray-500"
 							fill="none"

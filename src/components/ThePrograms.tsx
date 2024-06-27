@@ -8,7 +8,7 @@ const Card = () => {
 		<div className="border p-7 mt-8">
 			<h3 className="text-3xl">Lorem, ipsum dolor.</h3>
 
-			<PrimaryButton>Únete</PrimaryButton>
+			<PrimaryButton hover>Únete</PrimaryButton>
 		</div>
 	);
 };

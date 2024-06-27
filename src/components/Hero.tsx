@@ -4,10 +4,10 @@ import SectionContainerWithImage from "./SectionContainerWithImage";
 
 const Hero = () => {
 	return (
-		<SectionContainerWithImage>
-			<p className="text-4xl ">Escuela virtual de asesoría empresarial</p>
+		<SectionContainerWithImage className="pt-36  md:pt-44">
+			<p className="text-4xl md:text-7xl ">Escuela virtual de asesoría empresarial</p>
 
-			<p className="text-xl mt-7">
+			<p className="text-xl mt-7 ">
 				Un lugar para líderes que quieren cambiar el mundo
 			</p>
 
