@@ -5,10 +5,12 @@ import About from "@/components/About";
 import Image from "next/image";
 import ThePrograms from "@/components/ThePrograms";
 import Resources from "@/components/Resources";
+import Motivation from "@/components/Motivation";
+import Footer from "@/components/Footer";
 
 export default function Home() {
 	return (
-		<main>
+		<main className="pt-20">
 			<Navbar />
 
 			<Hero />
@@ -16,9 +18,16 @@ export default function Home() {
 			<WhySelect />
 
 			<About />
+
 			<ThePrograms />
 
 			<Resources />
+
+			<Motivation />
+
+			<Footer />
+
+		
 		</main>
 	);
 }

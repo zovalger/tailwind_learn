@@ -12,7 +12,7 @@ const Reason = () => {
 				/>
 			</div>
 
-			<div className="px-5 py-5">
+			<div className="px-7 py-5">
 				<div className="mb-5">29 jul 2022 1 min.</div>
 
 				<h3 className="text-2xl mb-2">Programa autodidacta</h3>
@@ -46,9 +46,9 @@ const Reason = () => {
 								/>
 							</svg>
 
-							<span>3</span>
+							<span className="ml-1">3</span>
 						</div>
-						<div className="flex items-center">
+						<div className="flex items-center ml-4">
 							<svg
 								className="h-5 w-5 text-gray-500"
 								viewBox="0 0 24 24"
@@ -58,11 +58,10 @@ const Reason = () => {
 								stroke-linecap="round"
 								stroke-linejoin="round"
 							>
-								{" "}
 								<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
 							</svg>
 
-							<span>3</span>
+							<span className="ml-1">3</span>
 						</div>
 					</div>
 					<div>
@@ -77,8 +76,7 @@ const Reason = () => {
 							stroke-linecap="round"
 							stroke-linejoin="round"
 						>
-							{" "}
-							<path stroke="none" d="M0 0h24v24H0z" />{" "}
+							<path stroke="none" d="M0 0h24v24H0z" />
 							<path d="M12 20l-7 -7a4 4 0 0 1 6.5 -6a.9 .9 0 0 0 1 0a4 4 0 0 1 6.5 6l-7 7" />
 						</svg>
 					</div>

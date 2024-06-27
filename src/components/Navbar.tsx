@@ -13,7 +13,7 @@ const Navbar = () => {
 
 	return (
 		<nav className="">
-			<div className="bg-black text-white p-4 flex">
+			<div className="bg-black text-white p-4 flex fixed w-full top-0">
 				<div>
 					<div className="text-3xl">
 						Davon
@@ -21,8 +21,20 @@ const Navbar = () => {
 					</div>
 					<div>Escuela de Asesoría Empresarial</div>
 				</div>
-				<button className="ml-auto p-5" onClick={openModal}>
-					-
+				<button className="ml-auto p-2" onClick={openModal}>
+					<svg
+						className="h-10 w-10 text-gray-500"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16M4 18h16"
+						/>
+					</svg>
 				</button>
 			</div>
 
@@ -30,11 +42,25 @@ const Navbar = () => {
 			<div
 				className={`${
 					!modalNav ? "hidden" : "block"
-				}  bg-black top-0 bottom-0 left-0 right-0 text-white text-xl absolute`}
+				}  bg-black top-0 bottom-0 left-0 right-0 text-white text-xl fixed`}
 			>
 				<div className="flex justify-between p-8">
 					<button>Entrar</button>
-					<button onClick={closeModal}>X</button>
+					<button onClick={closeModal}>
+						<svg
+							className="h-8 w-8 text-gray-500"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M6 18L18 6M6 6l12 12"
+							/>
+						</svg>
+					</button>
 				</div>
 
 				<div className="flex flex-col text-center mt-9">
