@@ -3,7 +3,7 @@ import WhiteButton from "./buttons/WhiteButton";
 
 const Reason = () => {
 	return (
-		<div className="border mb-5">
+		<div className="border mb-5 md:mb-0">
 			<div className="aspect-video ">
 				<img
 					src={"https://picsum.photos/500"}
@@ -88,18 +88,26 @@ const Reason = () => {
 
 const Resources = () => {
 	return (
-		<div className="py-14">
-			<div className="px-4">
-				<h2 className="text-3xl">Recursos</h2>
-				<p className="text-xl my-3">
-					Amplía tus conocimientos leyendo a los expertos más destacados
-				</p>
-				<WhiteButton border="black">Ver más</WhiteButton>
+		<div className="py-14 md:py-20 md:px-20">
+			<div className="px-4 md:px-0 md:mb-8">
+				<h2 className="text-3xl md:text-5xl">Recursos</h2>
+
+				<div className="md:grid md:grid-cols-2 md:items-center">
+					<p className="text-xl my-3">
+						Amplía tus conocimientos leyendo a los expertos más destacados
+					</p>
+					<WhiteButton border="black" className="ml-auto">
+						Ver más
+					</WhiteButton>
+				</div>
 			</div>
 
-			<Reason />
-			<Reason />
-			<Reason />
+
+			<div className="md:grid md:grid-cols-2 md:gap-10">
+				<Reason />
+				<Reason />
+				<Reason />
+			</div>
 		</div>
 	);
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const Reason = () => {
 	return (
-		<div className="px-4 py-12 border">
+		<div className="">
 			<div className="pb-6">
 				<svg
 					preserveAspectRatio="xMidYMid meet"
@@ -45,14 +45,24 @@ const Reason = () => {
 
 const WhySelect = () => {
 	return (
-		<div>
-			<h2 className="text-3xl px-4 py-14 border">
-				¿Por qué elegir nuestros cursos?
-			</h2>
+		<div className="block md:grid md:grid-cols-2 md:grid-rows-2">
+			<div className="px-4 py-12 border md:py-28 md:px-16 md:grid md:content-center">
+				<h2 className="text-3xl md:text-6xl">
+					¿Por qué elegir nuestros cursos?
+				</h2>
+			</div>
 
-			<Reason />
-			<Reason />
-			<Reason />
+			<div className="px-4 py-12 border md:py-28 md:px-16">
+				<Reason />
+			</div>
+
+			<div className="px-4 py-12 border md:py-28 md:px-16" >
+				<Reason />
+			</div>
+
+			<div className="px-4 py-12 border md:py-28 md:px-16">
+				<Reason />
+			</div>
 		</div>
 	);
 };
